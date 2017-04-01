@@ -15,6 +15,7 @@
             </feature>
         </config-file>
         <source-file src="src/android/Permission.java" target-dir="src/com/initmrd/cordova/plugin"/>
+        <source-file src="src/android/android-support-v4.jar" target-dir="libs" />
     </platform>
     
 </plugin>
