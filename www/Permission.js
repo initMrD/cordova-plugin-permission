@@ -1,8 +1,8 @@
 var exec = require('cordova/exec');
 
 var Permission = {
-    requestPermission:function(success,error){
-    	exec(success,error,"Permission","requestPermission", []);
+    requestPermission:function(permission,success,error){
+    	exec(success,error,"Permission","requestPermission", [permission]);
     }
 
 };
