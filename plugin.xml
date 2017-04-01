@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    id="cordova-plugin-Permission"
+    version="0.0.1">
+    
+    <name>CordovaPluginDemo</name>
+    
+    <js-module src="www/Permission.js" name="Permission">
+        <clobbers target="Permission" />
+    </js-module>
+    <platform name="android">
+    	<config-file parent="/*" target="res/xml/config.xml">
+            <feature name="Permission">
+                <param name="android-package" value="com.initmrd.cordova.plugin.Permission"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/Permission.java" target-dir="src/com/initmrd/cordova/plugin"/>
+    </platform>
+    
+</plugin>
