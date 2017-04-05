@@ -31,7 +31,9 @@ public class Permission extends CordovaPlugin {
                     requestpremissionList.add(mObject.get(i)+"");
                 }
             }
-            ActivityCompat.requestPermissions(cordova.getActivity(),requestpremissionList.toArray(new String[requestpremissionList.size()]),1);
+            if(requestpremissionList.size()!=0){
+                ActivityCompat.requestPermissions(cordova.getActivity(),requestpremissionList.toArray(new String[requestpremissionList.size()]),1);
+            }
             return true;
         }
         return false;
