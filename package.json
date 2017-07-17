@@ -1,0 +1,25 @@
+{
+  "name": "cordova-plugin-permission",
+  "version": "0.0.1",
+  "description": "若cordova项目在Android6.0以上无法获取权限，可是使用这个插件手动获取权限。 当然，你不想这么麻烦的话，可以在AndroidManifest.xml中将android:targetSdkVersion修改为22。 ### 第一步： 需要在AndroidManifest.xml中添加你需要的权限",
+  "cordova": {
+    "id": "cordova-plugin-permission",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://initMrD@github.com/initMrD/cordova-plugin-permission.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "initMrD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/initMrD/cordova-plugin-permission/issues"
+  },
+  "homepage": "https://github.com/initMrD/cordova-plugin-permission#readme"
+}
